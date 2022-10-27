@@ -175,7 +175,7 @@ h6,
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #FFC233;
+  background: #197BBD;
   color: #fff;
   padding: 10px 25px;
   margin-left: 30px;
@@ -353,7 +353,7 @@ h6,
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #FFC233;
+  background: #197BBD;
 }
 
 #hero .btn-get-started:hover {
@@ -530,38 +530,38 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about h3 {
+.lfe h3 {
   font-weight: 700;
   font-size: 34px;
   color: #4e4039;
 }
 
-.about h4 {
+.lfe h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
   color: #7a6960;
 }
 
-.about i {
+.lfe i {
   font-size: 48px;
   margin-top: 15px;
   color: #f39e7a;
 }
 
-.about p {
+.lfe p {
   font-size: 15px;
   color: #5a6570;
 }
 
 @media (max-width: 991px) {
-  .about .about-img img {
+  .lfe .about-img img {
     max-width: 70%;
   }
 }
 
 @media (max-width: 767px) {
-  .about .about-img img {
+  .lfe .about-img img {
     max-width: 90%;
   }
 }
@@ -569,7 +569,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#portfolio {
+.portfolio {
   justify-content: center;
 }
 
@@ -606,12 +606,21 @@ section {
   margin-right: 0;
 }
 
+.photo-gallery, .portfolio-container {
+  justify-content: center;
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   z-index: 1;
+  height: 100%;
+}
+
+.lfe {
+  margin:auto;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -630,6 +639,8 @@ section {
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  object-fit: cover;
+  height: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -776,6 +787,10 @@ section {
 .team {
   background: #fff;
   padding: 60px 0;
+}
+
+.member {
+  border-radius: 5px;
 }
 
 .team .member {
